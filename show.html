@@ -9,6 +9,13 @@
 
     <style>
 
+* { 
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-box: none;
+}
+
 body {
   font-family: 'Roboto Slab', serif;
   background: linear-gradient(#fbfdfa, #ffffff);
@@ -18,30 +25,27 @@ ul {
   list-style: none;
 }
 
-li.study {
-  margin: 0.5em;
-  padding: 0.5em;
-  color: black;
-  background: #82816d;
-  box-shadow: 1px 1px 1px #1b2d2a;
-}
-
-li.study:hover {
-  cursor: pointer;
-  background: #8a896a;
-}
-
-li.study .header {
-  font-size: 2em;
-}
-
 .controls {
-  padding: 0.2em;
-  font-size: 2em;
-  align-self: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  padding: 0 0.2em;
+  font-size: 1em;
 }
 
-.controls input[type='text'] {
+.controls .item {
+ margin-left: 1em; 
+}
+
+.button {
+  user-select: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ceff1a;
+}
+
+input[type='text'] {
   border-radius: 2px;
   border: 1px solid #414066;
   background-color: #ceff1a;
@@ -50,8 +54,30 @@ li.study .header {
 
 
 .app {
+  margin: 0.5em;
   display: flex;
   flex-flow: column;
+}
+
+.chapters {
+  border: 1px solid #1b2d2a;
+  box-shadow: 1px 1px 1px #1b2d2a;
+}
+
+.chapter h3 {
+  user-select: none;
+  cursor: pointer;
+  padding: 0.2em;
+  color: #1b2d2a;
+  font-size: 1em;
+}
+
+.chapter.selected {
+  background: #ceffaa;
+}
+
+.chapter:hover {
+  background: #ceff1a;
 }
 
     </style>
@@ -59,31 +85,30 @@ li.study .header {
   <body>
     <div class="app">
 
-The classical slav
+      <h2> The classical slav </h2>
 
-Remove Study
-Reset Progress
-Challenge Bot
-Select player to show stats for (openingsexercise)
+<div class='chapters'>
+  <div class='chapter selected'>
+    <h3>Chapter 1 Rare Lines</h3>
+  </div>
+  <div class='chapter'>
+    <h3>Chapter 2 Rare Lines</h3>
+  </div>
+</div>
 
-Include all chapters to practice
-
-- [ ] show chapters
-Chapter 1 Rare Lines
-  Only this chapter to practice
-  Ignore this chapter to practice
-Chapter 2 Rare Lines
-  Select chapter
-
-- [ ] show chapter
-Chapter 1 Rare Lines
-Include all variations to practice
-
-- [ ] show variations
 1. e4 { played/total/missed moves } e5 2. f4 exf4 ... 7. Nc3 Be7 (7... Nc6)
 Only this variation to practice
 Ignore this variation to practice
 
-   </div>
+<div class='controls'>
+  <div class='item button'> Include all variations to practice </div>
+  <div class='item button'> Remove Study </div>
+  <div class='item button'> Reset Progress </div>
+  <div class='item button'> Challenge Bot </div>
+  <div class='item'>
+    <input type='text' placeholder='Lichess player to show stats for (openingsexercise)'/>
+  </div>
+</div>
+    </div>
   </body>
 </html>
