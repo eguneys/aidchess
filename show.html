@@ -19,6 +19,7 @@
 body {
   font-family: 'Roboto Slab', serif;
   background: linear-gradient(#fbfdfa, #ffffff);
+  color: #2a2a2a;
 }
 
 ul {
@@ -80,6 +81,55 @@ input[type='text'] {
   background: #ceff1a;
 }
 
+
+.tview {
+  padding: 7px 3px 7px 7px;
+  border: 1px solid #1b2d2a;
+  box-shadow: 1px 1px 1px #1b2d2a;
+}
+
+.tview move {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.25em 0.17em;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.tview move index {
+  padding-right: 0.2em;
+  line-height: 111%;
+  font-size: 90%;
+  color: #987654;
+}
+
+.tview move:hover {
+  background: #ceffaa;
+  color: black;
+}
+
+
+.tview lines {
+  display: block;
+  margin-top: 2px;
+  border-left: 2px solid #4b5d5a;
+}
+
+.tview line {
+  display: block;
+  padding-left: 7px;
+}
+
+.tview line::before {
+  content: ' ';
+  margin-top: 0.6em;
+  margin-left: -8px;
+  border-top: 2px solid #4b5d5a;
+  position: absolute;
+  width: 8px;
+  height: 6px;
+}
+
     </style>
   </head>
   <body>
@@ -96,12 +146,29 @@ input[type='text'] {
   </div>
 </div>
 
-1. e4 { played/total/missed moves } e5 2. f4 exf4 ... 7. Nc3 Be7 (7... Nc6)
-Only this variation to practice
-Ignore this variation to practice
+<div class='tview'>
+  <move> <index>1.</index> e4 </move>
+  <comment> 10/20/3 d4 </comment>
+  <move> e5 </move>
+  <comment> 10/20/3 d4 </comment>
+  <move> <index>2.</index> f4 </move>
+  <comment> 10/20/3 d4 </comment>
+  <move> exf4 </move>
+  <comment> 10/20/3 d4 </comment>
+  <comment> ... </comment>
+  <move> <index>7.</index> Nc3 </move>
+  <comment> 10/20/3 d4 </comment>
+  <move> Be7 </move>
+  <comment> 10/20/3 d4 </comment>
+  <lines>
+  <line>
+  <move> <index> 7...</index> Nc6 </move>
+  <comment> 10/20/3 d4 </comment>
+  </line>
+  </lines>
+</div>
 
 <div class='controls'>
-  <div class='item button'> Include all variations to practice </div>
   <div class='item button'> Remove Study </div>
   <div class='item button'> Reset Progress </div>
   <div class='item button'> Challenge Bot </div>

@@ -1,20 +1,20 @@
 # opening
 - [ ] list studies
 - [x] add study
-- [ ] show study 
-- [ ] remove study
-- [ ] reset progress
-- [ ] challenge bot
-- [ ] select player to show stats against (default openingsexercise)
+- [x] show study 
+- [x] remove study
+- [x] reset progress
+- [x] challenge bot
+- [x] select player to show stats against (default openingsexercise)
 
 - [ ] include all chapters to practice
-- [ ] show chapters
+- [x] show chapters
   - [ ] only this chapter to practice
   - [ ] ignore this chapter to practice
   - [ ] select chapter
-- [ ] show chapter
+- [x] show chapter
 - [ ] include all variations to practice
-- [ ] show variations
+- [x] show variations
 - [ ] only this variation to practice
 - [ ] ignore this variation to practice
 
