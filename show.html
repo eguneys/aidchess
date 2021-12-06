@@ -54,7 +54,7 @@ input[type='text'] {
 }
 
 
-.app {
+app {
   margin: 0.5em;
   display: flex;
   flex-flow: column;
@@ -130,52 +130,62 @@ input[type='text'] {
   height: 6px;
 }
 
+
+.show .info {
+  text-align: center;
+}
+
     </style>
   </head>
   <body>
     <div class="app">
-
+      <app class='show'>
       <h2> The classical slav </h2>
 
-<div class='chapters'>
-  <div class='chapter selected'>
-    <h3>Chapter 1 Rare Lines</h3>
-  </div>
-  <div class='chapter'>
-    <h3>Chapter 2 Rare Lines</h3>
-  </div>
-</div>
+      <div class='chapters'>
+        <div class='chapter selected'>
+          <h3>Chapter 1 Rare Lines</h3>
+        </div>
+        <div class='chapter'>
+          <h3>Chapter 2 Rare Lines</h3>
+        </div>
+      </div>
 
 
+      <div class='info'>
+        <h3> Chapter 1 Rare Lines </h3>
+        <a href='https://lichess.org/study'> See study on lichess </a>
+      </div>
 
 
-<div class='tview'>
-  <move> <index>1.</index> e4 </move>
-  <comment> 10/20/3 d4 </comment>
-  <move> e5 </move>
-  <comment> 10/20/3 d4 </comment>
-  <move> <index>2.</index> f4 </move>
-  <comment> 10/20/3 d4 </comment>
-  <move> exf4 </move>
-  <comment> 10/20/3 d4 </comment>
-  <comment> ... </comment>
-  <move> <index>7.</index> Nc3 </move>
-  <comment> 10/20/3 d4 </comment>
-  <move> Be7 </move>
-  <comment> 10/20/3 d4 </comment>
-  <lines>
-  <line>
-  <move> <index> 7...</index> Nc6 </move>
-  <comment> 10/20/3 d4 </comment>
-  </line>
-  </lines>
-</div>
+      <div class='tview'>
+        <move> <index>1.</index> e4 </move>
+        <comment> 10/20/3 d4 </comment>
+        <move> e5 </move>
+        <comment> 10/20/3 d4 </comment>
+        <move> <index>2.</index> f4 </move>
+        <comment> 10/20/3 d4 </comment>
+        <move> exf4 </move>
+        <comment> 10/20/3 d4 </comment>
+        <comment> ... </comment>
+        <move> <index>7.</index> Nc3 </move>
+        <comment> 10/20/3 d4 </comment>
+        <move> Be7 </move>
+        <comment> 10/20/3 d4 </comment>
+        <lines>
+        <line>
+        <move> <index> 7...</index> Nc6 </move>
+        <comment> 10/20/3 d4 </comment>
+        </line>
+        </lines>
+      </div>
 
-<div class='controls'>
-  <div class='item button'> Challenge Bot </div>
-  <div class='item button'> Reset Progress </div>
-  <div class='item button'> Remove Study </div>
-</div>
+      <div class='controls'>
+        <div class='item button'> Challenge Bot </div>
+        <div class='item button'> Reset Progress </div>
+        <div class='item button'> Remove Study </div>
+      </div>
+      </app>
     </div>
   </body>
 </html>
