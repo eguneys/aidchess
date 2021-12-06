@@ -1,15 +1,15 @@
 # home
 
-- [ ] opening
-- [ ] about
+- [x] opening
+- [x] about
 - [ ] endgames
-
+- [ ] auth
 
 # about
 
-- [ ] header
-- [ ] footer
-- [ ] about
+- [x] header
+- [x] footer
+- [x] about
 
 `
 
