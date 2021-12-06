@@ -1,3 +1,36 @@
+# home
+
+- [ ] opening
+- [ ] about
+- [ ] endgames
+
+
+# about
+
+- [ ] header
+- [ ] footer
+- [ ] about
+
+`
+
+  aidchess | login via lichess
+
+  home | about 
+
+  Opening practice and progress
+
+  Pickup an opening book and make a lichess study of important lines***.
+  Add the study link into this site*.
+  Select a chapter, and click Challenge Bot to practice the opening with @openingsexercise.
+  Your moves will be analyzed and you will see your progress for each opening move**.
+
+  Play as much as possible to really improve.
+
+  * Login with your lichess account first.
+  ** The format is `Correct moves / Total played / Missed moves and your most played alternative`
+  *** Or use an existing study, from featured selections.
+`
+
 # opening
 - [ ] list studies
 - [x] add study

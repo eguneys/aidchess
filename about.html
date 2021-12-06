@@ -1,0 +1,148 @@
+<html>
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <style>
+
+
+* { 
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-box: none;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(#fbfdfa, #ffffff);
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  display: flex;
+  flex-flow: column;
+  margin: 0.5em 1em;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+header .title {
+  margin-left: 1em;
+}
+
+header a {
+  text-decoration: none;
+  color: #414066;
+}
+
+header .login {
+  padding: 0 1em;
+  vertical-align: middle;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin: 0 0.5em;
+}
+
+
+
+section {
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #414066;
+  box-shadow: 1px 1px 1px #1b2d2a;
+}
+
+section h2 {
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+section p {
+  font-size: 1.2em;
+}
+
+section small {
+  color: #414066;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+section .highlight {
+  background: #ceff1a;
+}
+
+section a {
+  text-decoration: none;
+  color: #414066;
+}
+
+section .code {
+  font-size: 0.8em;
+  padding: 0.2em;
+  background: #82816d;
+  box-shadow: 1px 1px 1px #1b2d2a inset;
+}
+
+section .small {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class='title'><a href='/'>aidchess</a></h1>
+
+      <div class='login'><a href='auth'> login via lichess </a></div>
+    </header>
+
+
+    <div class="app">
+
+      <section>
+
+        <h2>Opening practice and progress</h2>
+
+        <p>Pickup an opening book and make a lichess study of important lines<small>***</small>.</p>
+        <p>Add the study link into this site<small>*</small>.</p>
+        <p>Select a chapter, and click <span class='highlight'>Challenge Bot</span> to practice the opening with <a href='https://lichess.org/@/openingsexercise'>@openingsexercise</a>.</p>
+        <p>Your moves will be analyzed and you will see your progress for each opening move<small>**</small>.</p>
+
+        <p>Play as much as possible to really improve.</p>
+
+        <div class='small'>
+          <p><small>*</small> <a href='/auth'>Login via lichess</a> first.</p>
+          <p><small>**</small> The format is <span class='code'>Correct moves / Total played / Missed moves and your most played alternative</span>.</p>
+          <p><small>**</small> Please refresh the page to see the most recent progress. </p>
+          <p><small>***</small> Or use an existing study, from <a href='/'>featured selections</a>.</p>
+        </div>
+    </div>
+      </section>
+
+      <footer>
+        <a href='/'> home </a> |
+        <a href='/about'> about </a>
+      </footer>
+  </body>
+</html>
