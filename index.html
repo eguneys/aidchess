@@ -1,0 +1,89 @@
+<html>
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <style>
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(#fbfdfa, #ffffff);
+}
+
+ul {
+  list-style: none;
+}
+
+li.study {
+  margin: 0.5em;
+  padding: 0.5em;
+  color: black;
+  background: #82816d;
+  box-shadow: 1px 1px 1px #1b2d2a;
+}
+
+li.study:hover {
+  user-select: none;
+  cursor: pointer;
+  background: #8a896a;
+}
+
+li.study .header {
+  font-size: 2em;
+}
+
+.controls {
+  padding: 0.2em;
+  font-size: 2em;
+  align-self: center;
+}
+
+.controls input[type='text'] {
+  border-radius: 2px;
+  border: 1px solid #414066;
+  background-color: #ceff1a;
+  font-size: 1em;
+}
+
+
+.app {
+  display: flex;
+  flex-flow: column;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <ul class='studies'>
+        <li class='study'>
+          <div class='header'>
+            <a href='/show'>The classical slav</a>
+          </div>
+          <div class='info'>
+            Chapter 1 Rare Lines
+            Chapter 2 Rare Lines
+          </div>
+        </li>
+        <li class='study'>
+          <div class='header'>
+            The King's Gambit - John Shaw
+          </div>
+          <div class='info'>
+            Chapter 7 Fischer's Defense
+          </div>
+        </li>
+      </ul>
+      <div class='controls'>
+        <input type='text' placeholder='add lichess study link'/>
+      </div>
+      <section class='featured'>
+        <h2> Featured studies </h2>
+        <p> See <a href='about'>about</a> to see featured studies </p>
+      </section>
+    </div>
+  </body>
+</html>
